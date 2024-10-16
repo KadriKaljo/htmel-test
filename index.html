@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="flex justify-between gap-8 mx-8 my-4 items-center">
+      <img class="h-12 w-24"
+        src="https://play-lh.googleusercontent.com/YaasJsy46v32r1uVm5NhpngbzuqvwTtwo6itm503ytqiS5MMACpNKaXSQmtMTJBY8ccq"
+        alt="" />
+      <div class="flex gap-6 font-semi-bold">
+        <a class="text-[18px] text-gray-400 hover:text-[#ff5000]" href="">Osta pilet</a>
+        <a class="text-[18px] text-gray-400 hover:text-[#ff5000]" href="">Sõiduplaanid</a>
+        <a class="text-[18px] text-gray-400 hover:text-[#ff5000]" href="">Pileti tagastamine</a>
+        <a class="text-[18px] text-gray-400 hover:text-[#ff5000]" href="">Ärikliendileping</a>
+        <a class="text-[18px] text-gray-400 hover:text-[#ff5000]" href="">Uudised</a>
+        <a class="text-[18px] text-gray-400 hover:text-[#ff5000]" href="">Info</a>
+      </div>
+      <div class="flex my-auto">
+        <div class="flex flex-col text-end border-r-2 border-gray-400 pr-8">
+          <a class="text-[14px] text-gray-400 hover:text-[#ff5000]" href="tel:12550">12550</a>
+          <a class="text-[14px] text-gray-400 hover:text-[#ff5000]" href="mailto:info@tpilet.ee">info@tpilet.ee</a>
+        </div>
+        <div
+          class="flex gap-8 items-center mx-8 text-gray-400 text-xl font-semibold"
+        >
+          <p class="text-[#9b9b9b] hover:text-[#ff5000] cursor-pointer">ET</p>
+          <p class="text-[#9b9b9b] hover:text-[#ff5000] cursor-pointer">EN</p>
+          <p class="text-[#9b9b9b] hover:text-[#ff5000] cursor-pointer">RU</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="flex flex-col justify-center items-center h-screen gap-8 bg-[url('https://webcms.tpilet.ee/static/taustapilt.jpg')] bg-cover bg-center">
+      <div class="text-center mt-40">
+        <h1 class="text-3xl font-semi-bold text-4xl text-[#272727]">Osta bussipiletid</h1>
+      </div>
+
+      <div class="bg-white shadow-lg w-[400px] h-[506.27px] p-10 mt-0">
+        <div class="flex justify-between border-b mb-2">
+          <button class="text-[#9b9b9b] font-semibold text-[14px] focus:text-[#FF5000] active:text-[#FF5000] focus:border-b-[3px] active:border-b-[3px] border-[#FF5000]">ÜKS SUUND
+          </button>
+          <button class="text-[#9b9b9b] font-semibold text-[14px] focus:text-[#FF5000] active:text-[#FF5000] focus:border-b-[3px] active:border-b-[3px] border-[#FF5000]">EDASI-TAGASI
+          </button>
+        </div>
+
+        <div class="relative w-[350px]">
+          <input 
+            class="w-full h-[54px] pl-[24px] pr-[40px] placeholder-[#9b9b9b] bg-transparent" 
+            type="text" 
+            placeholder="Lähtepeatus"/>
+          <span class="absolute right-0 top-1/2 transform -translate-y-1/2 text-[#ff5000]">
+            <i class="fas fa-exchange-alt"></i> 
+          </span>
+        </div>
+        
+        <div class="relative w-[350px] mt-4">  
+          <input 
+            class="w-full h-[54px] pl-[24px] placeholder-[#9b9b9b]" 
+            type="text" 
+            placeholder="Sihtpeatus"/>
+        </div>
+
+        <div class="relative w-[350px] mt-4">
+          <input 
+            type="date" 
+            class="w-full h-[54px] pl-[24px] pr-[40px] border border-gray-300 rounded focus:outline-none" 
+            placeholder="Vali kuupäev" />
+          <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 pointer-events-none">
+            <i class="fas fa-chevron-down"></i> 
+          </span>
+        </div>
+
+        <div class="relative w-[350px] flex flex-col items-center mt-6">
+          <button 
+            class="h-[56px] w-[200px] bg-gradient-to-r from-orange-500 to-orange-400 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:from-orange-600 hover:to-orange-500 transition ease-in-out text-[16px]">
+            OTSI REISE
+          </button>
+        </div class="text-center mt-10">
+          <h2 class="text-[#272727] font-semi-bold mb-4">POPULAARSED SUUNAD</h2>
+          <div class="grid grid-cols-2 gap-4 text-[#9b9b9b] font-[16px]">
+            <div class="space-y-2 text-left">
+              <p class="text-[#9b9b9b] hover:text-[#272727] cursor-pointer">Tallinn > Tartu</p>
+              <p class="text-[#9b9b9b] hover:text-[#272727] cursor-pointer">Tallinn > Pärnu</p>
+              <p class="text-[#9b9b9b] hover:text-[#272727] cursor-pointer">Tallinn > Narva</p>
+              <p class="text-[#9b9b9b] hover:text-[#272727] cursor-pointer">Tallinn > Viljandi</p>
+            </div>
+            <div class="space-y-2 text-right">
+              <p class="text-[#9b9b9b] hover:text-[#272727] cursor-pointer">Tartu > Tallinn</p>
+              <p class="text-[#9b9b9b] hover:text-[#272727] cursor-pointer">Pärnu > Tallinn</p>
+              <p class="text-[#9b9b9b] hover:text-[#272727] cursor-pointer">Narva > Tallinn</p>
+              <p class="text-[#9b9b9b] hover:text-[#272727] cursor-pointer">Viljandi > Tallinn</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
